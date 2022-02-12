@@ -38,7 +38,7 @@ result.addEventListener('click', (e) => {
     if (input1.value == '') {
 
     } else {
-        input1.value = eval(input1.value);
+        input1.value = eval(input1.value).toFixed();
         document.querySelector('.btn-delete').classList.add('active');
     }
 });
