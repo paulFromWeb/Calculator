@@ -39,7 +39,9 @@ result.addEventListener('click', (e) => {
 
     } else {
         input1.value = eval(input1.value);
-        input1.value = +(input1.value.toFixed(4));
+        input1.value = +input1.value;
+        input1.value = input1.value.toFixed(4);
+        
         document.querySelector('.btn-delete').classList.add('active');
     }
 });
