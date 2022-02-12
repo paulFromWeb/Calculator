@@ -30,6 +30,11 @@ body{
     margin-top: 10%;
     background-color:rgb(0, 0, 0)
 } 
+@media(max-width:1512px){
+    .container {
+        min-width: calc(320px + 50 * ((100vw - 320px) / (1600)));   
+    } 
+}
 body .Result{
     width: 155px !important;
 }
