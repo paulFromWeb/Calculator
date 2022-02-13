@@ -1,7 +1,9 @@
 const input1 = document.getElementById('input1');
 const buttons = document.querySelectorAll('.btn');
-
-buttons.forEach(item => {
+input1.addEventListener('click',(e) =>{
+    e.preventDefault();
+})
+    buttons.forEach(item => {
     item.addEventListener('click', (e) => {
         let oper = e.target.textContent;
         input1.value += oper;
